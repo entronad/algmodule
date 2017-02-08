@@ -1,0 +1,2 @@
+# algmodule
+algorithms in JavaScript
