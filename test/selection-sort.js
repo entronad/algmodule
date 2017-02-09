@@ -2,10 +2,9 @@
  *
  */
 import {selectionSort} from '../components/selection-sort'
+import {generateRandomArray, testSort} from './sort-test-helper'
 
-const a = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+const n = 100000
+const a = generateRandomArray(n, 0, n);
 
-selectionSort(a);
-for (let i = 0; i < a.length; i ++) {
-    console.log(a[i]);
-}
+testSort("Selection Sort", selectionSort, a);

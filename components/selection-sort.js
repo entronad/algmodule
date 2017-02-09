@@ -16,4 +16,4 @@ export function selectionSort(arr) {
         }
         swarp (arr, i, minIndex);
     }
-};
+}
