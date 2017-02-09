@@ -1,7 +1,7 @@
 /**
  *
  */
-import selectionSort from '../components/selection-sort'
+import {selectionSort} from '../components/selection-sort'
 
 const a = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 
