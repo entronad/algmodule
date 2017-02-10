@@ -2,6 +2,8 @@
  *
  */
 
+import {swarp} from '../components/util/swarp'
+
 /**
  * random integer Array[n] in [rangeL, rangeR]
  * @param n
@@ -16,6 +18,20 @@ export function generateRandomArray(n, rangeL, rangeR) {
     }
     return arr;
 
+}
+
+export function generateNearlyOrderedArray(n, swapTimes) {
+
+    const arr = new Array(n);
+    for (let i = 0; i < n; i ++) {
+        arr[i] = i;
+    }
+    for (let i = 0; i < swapTimes; i ++) {
+        const posx = Math.floor(Math.random() * (n + 1));
+        const posy = Math.floor(Math.random() * (n + 1));
+        swarp(arr, posx, posy);
+    }
+    return arr;
 }
 
 export function printArray(arr) {
