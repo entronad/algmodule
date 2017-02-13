@@ -10,7 +10,7 @@ export function bubbleSort(arr) {
     do {
         swapped = false;
         for (let i = 1; i < n; i ++) {
-            if (arr[i - 1], arr[i]) {
+            if (arr[i - 1] > arr[i]) {
                 swarp(arr, i - 1, i);
                 swapped = true;
             }

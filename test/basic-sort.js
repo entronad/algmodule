@@ -15,7 +15,7 @@ const arrRand2 = arrRand.concat();
 const arrRand3 = arrRand.concat();
 const arrRand4 = arrRand.concat();
 
-const arrNO = generateNearlyOrderedArray(n, 100);
+const arrNO = generateNearlyOrderedArray(n, 1000);
 const arrNO2 = arrNO.concat();
 const arrNO3 = arrNO.concat();
 const arrNO4 = arrNO.concat();
