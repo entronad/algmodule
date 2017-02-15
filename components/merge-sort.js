@@ -3,7 +3,7 @@
  */
 
 // 将arr[l...mid]和arr[mid + 1...r]两部分进行归并
-function __merge(arr, l, mid, r) {
+export function __merge(arr, l, mid, r) {
 
     const aux = Array(r - l + 1);
     for ( let i = l; i <= r; i ++){
@@ -43,7 +43,10 @@ function __mergeSort(arr, l, r) {
     const mid = Math.floor((l + r) / 2);
     __mergeSort(arr, l, mid);
     __mergeSort(arr, mid + 1, r);
-    __merge(arr, l, mid, r);
+    if (arr[mid] > arr[mid + 1]) {
+        __merge(arr, l, mid, r);
+    }
+
 }
 
 export function mergeSort(arr) {
