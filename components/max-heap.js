@@ -33,5 +33,29 @@ MaxHeap.prototype = {
         this.data[this.count + 1] = item;
         this.count ++;
         this.shiftUp(this.count);
+    },
+
+    shiftDown: function (k) {
+        while (2 * k <= this.count) {
+            let j = 2 * k;
+            if (j + 1 <= this.count && this.data[j + 1] > this.data[j]) {
+                j += 1;
+            }
+            if (this.data[k] >= this.data[j]) {
+                break;
+            }
+            swarp(this.data, k, j);
+            k = j;
+        }
+    },
+    
+    extractMax: function () {
+        if (this.count > 0) {
+            const ret = this.data[1];
+            swarp(this.data, 1, this.count);
+            this.count --;
+            this.shiftDown(1);
+            return ret;
+        }
     }
 };
