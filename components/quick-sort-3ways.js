@@ -9,7 +9,7 @@ import {swarp} from './util/swarp'
 // 之后递归对 <v; >v 两部分进行继续进行三路快速排序
 function __quickSort3Ways(arr, l, r) {
 
-    if (r - l <= 15) {
+    if (r - l <= 0) {
         return;
     }
 

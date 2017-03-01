@@ -4,11 +4,10 @@
 
 import {MaxHeap} from './max-heap'
 
-export function heapSort1(arr) {
+export function heapSort2(arr) {
     const maxHeap = new MaxHeap();
-    for (let i = 0; i < arr.length; i++) {
-        maxHeap.insert(arr[i]);
-    }
+    maxHeap.initData(arr);
+
     for (let i = arr.length - 1; i >= 0; i --) {
         arr[i] = maxHeap.extractMax();
     }

@@ -57,5 +57,16 @@ MaxHeap.prototype = {
             this.shiftDown(1);
             return ret;
         }
+    },
+
+    //JavaScript无法重载构造函数
+    initData: function (arr) {
+        for (let i = 0; i < arr.length; i ++) {
+            this.data[i + 1] = arr[i];
+        }
+        this.count = arr.length;
+        for (let i = Math.floor(this.count / 2); i >= 1; i --) {
+            this.shiftDown(i);
+        }
     }
 };
