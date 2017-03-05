@@ -2,7 +2,7 @@
  *
  */
 
-import {__merge} from './merge-sort'
+import {__merge} from './mergeSort'
 
 export function mergeSortBU(arr) {
 

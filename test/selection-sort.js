@@ -1,7 +1,7 @@
 /**
  *
  */
-import {selectionSort} from '../components/selection-sort'
+import {selectionSort} from '../components/selectionSort'
 import {generateRandomArray, testSort} from './sort-test-helper'
 
 const n = 100000

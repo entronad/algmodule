@@ -2,7 +2,7 @@
  *
  */
 
-import {MaxHeap} from '../components/max-heap'
+import {MaxHeap} from '../components/MaxHeap'
 
 const maxheap = new MaxHeap();
 for (let i = 0; i < 15; i ++) {

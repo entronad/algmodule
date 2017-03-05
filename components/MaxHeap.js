@@ -6,7 +6,7 @@ import {swarp} from './util/swarp'
 
 //基于构造函数创建对象
 export function MaxHeap() {
-    this.data = new Array();
+    this.data = [];
     this.count = 0;
 }
 

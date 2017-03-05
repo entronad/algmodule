@@ -2,13 +2,13 @@
  *
  */
 
-import {quickSort} from '../components/quick-sort'
-import {quickSort2} from '../components/quick-sort2'
-import {quickSort3Ways} from '../components/quick-sort-3ways'
+import {quickSort} from '../components/quickSort'
+import {quickSort2} from '../components/quickSort2'
+import {quickSort3Ways} from '../components/quickSort3Ways'
 import {generateRandomArray, testSort, generateNearlyOrderedArray} from './sort-test-helper'
-import {heapSort1} from '../components/heap-sort1'
-import {heapSort2} from '../components/heap-sort2'
-import {heapSort} from '../components/heap-sort'
+import {heapSort1} from '../components/heapSort1'
+import {heapSort2} from '../components/heapSort2'
+import {heapSort} from '../components/heapSort'
 
 const n = 500000;
 

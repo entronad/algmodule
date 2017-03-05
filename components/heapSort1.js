@@ -2,7 +2,7 @@
  *
  */
 
-import {MaxHeap} from './max-heap'
+import {MaxHeap} from './MaxHeap'
 
 export function heapSort1(arr) {
     const maxHeap = new MaxHeap();

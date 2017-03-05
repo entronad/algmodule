@@ -2,10 +2,10 @@
  *
  */
 
-import {selectionSort} from '../components/selection-sort'
-import {insertionSort} from '../components/insertion-sort'
-import {bubbleSort} from '../components/bubble-sort'
-import {shellSort} from '../components/shell-sort'
+import {selectionSort} from '../components/selectionSort'
+import {insertionSort} from '../components/insertionSort'
+import {bubbleSort} from '../components/bubbleSort'
+import {shellSort} from '../components/shellSort'
 import {generateRandomArray, testSort, generateNearlyOrderedArray} from './sort-test-helper'
 
 const n = 10000;

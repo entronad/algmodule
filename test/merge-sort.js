@@ -2,9 +2,9 @@
  *
  */
 
-import {mergeSort} from "../components/merge-sort"
-import {mergeSortBU} from '../components/merge-sort-bu'
-import {insertionSort} from "../components/insertion-sort"
+import {mergeSort} from "../components/mergeSort"
+import {mergeSortBU} from '../components/mergeSortBU'
+import {insertionSort} from "../components/insertionSort"
 import {generateRandomArray, testSort, generateNearlyOrderedArray} from './sort-test-helper'
 
 const n = 50000;

@@ -2,8 +2,8 @@
  *
  */
 
-import {selectionSort} from '../components/selection-sort'
-import {insertionSort} from '../components/insertion-sort'
+import {selectionSort} from '../components/selectionSort'
+import {insertionSort} from '../components/insertionSort'
 import {generateRandomArray, testSort, generateNearlyOrderedArray} from './sort-test-helper'
 
 const n = 10000;

@@ -2,7 +2,7 @@
  *
  */
 
-import {shellSort} from '../components/shell-sort'
+import {shellSort} from '../components/shellSort'
 import {generateRandomArray, testSort, generateNearlyOrderedArray, printArray} from './sort-test-helper'
 
 const n = 50;

@@ -6,9 +6,9 @@ import {swarp} from './util/swarp'
 
 //基于构造函数创建对象
 export function IndexMaxHeap() {
-    this.data = new Array();
-    this.indexes = new Array();
-    this.reverse = new Array();
+    this.data = [];
+    this.indexes = [];
+    this.reverse = [];
     this.count = 0;
 }
 

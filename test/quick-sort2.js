@@ -2,8 +2,8 @@
  *
  */
 
-import {quickSort} from '../components/quick-sort'
-import {quickSort2} from '../components/quick-sort2'
+import {quickSort} from '../components/quickSort'
+import {quickSort2} from '../components/quickSort2'
 import {generateRandomArray, testSort, generateNearlyOrderedArray} from './sort-test-helper'
 
 const n = 10000;
