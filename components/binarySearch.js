@@ -6,7 +6,8 @@ export function binarySearch(arr, target) {
     let l = 0;
     let r = n - 1;
     while (l <= r) {
-        let mid = Math.floor((l + r) / 2);
+        // let mid = Math.floor((l + r) / 2);
+        let mid = l + Math.floor((r - l) / 2);
         if (arr[mid] === target) {
             return mid;
         }
