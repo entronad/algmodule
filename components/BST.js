@@ -83,4 +83,42 @@ export class BST {
         }
         return this.__search(node.right, key);
     }
+
+    // 遍历的操作为传入的callback
+
+    preOrder(callback) {
+        this.__preOrder(this.root, callback);
+    }
+
+    __preOrder(node, callback) {
+        if (node != null) {
+            callback(node.key);
+            this.__preOrder(node.left, callback);
+            this.__preOrder(node.right, callback);
+        }
+    }
+
+    inOrder(callback) {
+        this.__inOrder(this.root, callback);
+    }
+
+    __inOrder(node, callback) {
+        if (node != null) {
+            this.__inOrder(node.left, callback);
+            callback(node.key);
+            this.__inOrder(node.right, callback);
+        }
+    }
+
+    postOrder(callback) {
+        this.__postOrder(this.root, callback);
+    }
+
+    __postOrder(node, callback) {
+        if (node != null) {
+            this.__postOrder(node.left, callback);
+            this.__postOrder(node.right, callback);
+            callback(node.key);
+        }
+    }
 }
