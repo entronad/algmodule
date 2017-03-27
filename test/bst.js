@@ -22,3 +22,5 @@ bst.inOrder(key => process.stdout.write(key + ' '));
 console.log("");
 bst.postOrder(key => process.stdout.write(key + ' '));
 console.log("");
+bst.levelOrder(key => process.stdout.write(key + ' '));
+console.log("");
