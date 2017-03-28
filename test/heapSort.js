@@ -5,7 +5,7 @@
 import {quickSort} from '../components/quickSort'
 import {quickSort2} from '../components/quickSort2'
 import {quickSort3Ways} from '../components/quickSort3Ways'
-import {generateRandomArray, testSort, generateNearlyOrderedArray} from './sort-test-helper'
+import {generateRandomArray, testSort, generateNearlyOrderedArray} from './sortTestHelper'
 import {heapSort1} from '../components/heapSort1'
 import {heapSort2} from '../components/heapSort2'
 import {heapSort} from '../components/heapSort'

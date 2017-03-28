@@ -6,7 +6,7 @@ import {selectionSort} from '../components/selectionSort'
 import {insertionSort} from '../components/insertionSort'
 import {bubbleSort} from '../components/bubbleSort'
 import {shellSort} from '../components/shellSort'
-import {generateRandomArray, testSort, generateNearlyOrderedArray} from './sort-test-helper'
+import {generateRandomArray, testSort, generateNearlyOrderedArray} from './sortTestHelper'
 
 const n = 10000;
 

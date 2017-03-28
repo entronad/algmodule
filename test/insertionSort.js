@@ -4,7 +4,7 @@
 
 import {selectionSort} from '../components/selectionSort'
 import {insertionSort} from '../components/insertionSort'
-import {generateRandomArray, testSort, generateNearlyOrderedArray} from './sort-test-helper'
+import {generateRandomArray, testSort, generateNearlyOrderedArray} from './sortTestHelper'
 
 const n = 10000;
 const arr = generateNearlyOrderedArray(n, 100);
