@@ -9,9 +9,9 @@ export class DenseGraph {
         this.directed = directed;
         this.g = [];
         for (let i = 0; i < n; i ++) {
-            g[i] = [];
+            this.g[i] = [];
             for (let j = 0; j < n; j ++) {
-                g[i][j] = false;
+                this.g[i][j] = false;
             }
         }
     }
@@ -34,8 +34,34 @@ export class DenseGraph {
         }
         this.g[v][w] = true;
         if (!this.directed) {
-            g[w][v] = true;
+            this.g[w][v] = true;
         }
         this.m ++;
+    }
+}
+
+export class adjIterator {
+    constructor(graph, v) {
+        this.v = v
+        this.index = 0
+        this.G = graph
+    }
+
+    begin() {
+        this.index = -1
+        return this.next()
+    }
+
+    next() {
+        for (this.index += 1; this.index < this.G.V(); this.index ++) {
+            if(this.G.g[this.v][this.index]) {
+                return this.index
+            }
+        }
+        return -1
+    }
+
+    end() {
+        return this.index >= this.G.V()
     }
 }
